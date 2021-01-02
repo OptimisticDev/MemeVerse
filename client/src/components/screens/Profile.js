@@ -155,7 +155,7 @@ const Profile = () => {
             className="waves-effect waves-light red lighten-2 btn"
             onClick={postDetails}
           >
-            Create Post
+            Share Post
           </button>
         </div>
       </div>
