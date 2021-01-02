@@ -35,9 +35,11 @@ ___
      npm run dev
      ```
 ## Functionality
-  * Signin & Signup user
+  * Signin, Signup and Signout user
   * Forget & Reset password through sending email
   * Signin user can upload image/meme with title and body (title & body not mandatory)
   * After attach the photo user should click the upload button to upload photo after that user can share the photo/post 
   * Signin user can show other user post in the hub (home page) and like unlike and comments the photo/post
   * Signin user can see his/her shared photo and total number of post
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dMZgzxwGy28" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
