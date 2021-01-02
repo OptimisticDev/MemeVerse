@@ -2,6 +2,11 @@
 ___
 ## Front-End - React, Context API & materializecss
 ## Back-End - Node.js, Express.js & MongoDB
+
+---
+## Video Link ---
+https://www.youtube-nocookie.com/embed/dMZgzxwGy28?start=3
+---
 ___
 ## Steps to run in development mode:-
 * Clone the repo
@@ -41,5 +46,3 @@ ___
   * After attach the photo user should click the upload button to upload photo after that user can share the photo/post 
   * Signin user can show other user post in the hub (home page) and like unlike and comments the photo/post
   * Signin user can see his/her shared photo and total number of post
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dMZgzxwGy28" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
