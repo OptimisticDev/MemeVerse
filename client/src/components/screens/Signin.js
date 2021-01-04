@@ -54,7 +54,7 @@ const Signin = () => {
         M.toast({ html: message, classes: "success" });
 
         setSignInUser({ ...SIGNIN_USER_INITIAL_STATE });
-        history.replace("/home");
+        history.push("/home");
       } else {
         setErrorMsg({ ...errors });
       }
