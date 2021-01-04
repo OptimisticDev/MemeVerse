@@ -22,7 +22,7 @@ const Home = () => {
       const { data } = await axios.get(POST_GET_URL, { headers });
 
       if (data) {
-        console.log(data);
+        // console.log(data);
         const { posts, success } = data;
         if (success) {
           setPosts(posts);

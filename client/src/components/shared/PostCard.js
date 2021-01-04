@@ -53,7 +53,7 @@ const PostCard = (props) => {
             comments.map((comment, i) => (
               <div className="comment card" key={i}>
                 <h6>
-                  <span>{comment.commentedBy.name}</span>
+                  <span>{comment.commentedBy?.name}</span>
                 </h6>
                 <p className="comment-tetx">{comment.text}</p>
               </div>
