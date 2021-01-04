@@ -66,7 +66,7 @@ const Profile = () => {
         if (success) {
           M.toast({ html: message, classes: "success" });
           setPost({ ...POST_INITIAL_STATE });
-          history.push("/home");
+          history.replace("/home");
         } else {
           M.toast({ html: errors.invalidUser, classes: "error" });
           setErrorMsg({ ...errors });
@@ -85,6 +85,7 @@ const Profile = () => {
 
       if (data) {
         const { myPosts, success } = data;
+        // console.log(data);
         if (success) {
           setPosts(myPosts);
         }
