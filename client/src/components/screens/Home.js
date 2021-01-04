@@ -22,8 +22,10 @@ const Home = () => {
       const { data } = await axios.get(POST_GET_URL, { headers });
 
       if (data) {
-        const { posts } = data;
-        setPosts(posts || []);
+        const { posts, success } = data;
+        if (success) {
+          setPosts(posts);
+        }
       }
     };
 

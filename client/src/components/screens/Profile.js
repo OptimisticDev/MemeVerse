@@ -84,8 +84,10 @@ const Profile = () => {
       const { data } = await axios.get(POST_GET_MYPOST_URL, { headers });
 
       if (data) {
-        const { myPosts } = data;
-        setPosts(myPosts);
+        const { myPosts, success } = data;
+        if (success) {
+          setPosts(myPosts);
+        }
       }
     };
 

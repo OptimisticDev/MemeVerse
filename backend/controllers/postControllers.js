@@ -52,7 +52,7 @@ const getAllPosts = asyncHandler(async (req, res) => {
     .populate("comments.commentedBy", "_id, name");
 
   if (posts) {
-    res.json({
+    return res.json({
       success: true,
       posts,
     });
@@ -76,7 +76,7 @@ const getAllMyPosts = asyncHandler(async (req, res) => {
   );
 
   if (myPosts) {
-    res.json({
+    return res.json({
       success: true,
       myPosts,
     });
@@ -109,7 +109,7 @@ const likeUnlikePost = asyncHandler(async (req, res) => {
       if (err) {
         return res.status(422).json({ error: err });
       } else {
-        res.json(result);
+        return res.json(result);
       }
     });
   }
@@ -135,7 +135,7 @@ const createComment = (req, res) => {
       if (err) {
         return res.status(422).json({ error: err });
       } else {
-        res.json(result);
+        return res.json(result);
       }
     });
 };
