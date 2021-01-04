@@ -1,4 +1,5 @@
 import express from "express";
+import path from "path";
 import dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
@@ -16,10 +17,19 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use((req, res, next) => {
-  console.log("It works");
-  next();
-});
+const __dirname = path.resolve();
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/client/build")));
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  );
+} else {
+  app.use((req, res, next) => {
+    console.log("It works");
+    next();
+  });
+}
 
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
