@@ -1,4 +1,5 @@
-const PORT = process.env.REACT_APP_PORT || "http://localhost:5000";
+const PORT =
+  process.env.REACT_APP_PORT || "https://memeverseapp.herokuapp.com/";
 
 export const USER_SIGNUP_POST_URL = `${PORT}/api/users/signup`;
 export const USER_SIGNIN_POST_URL = `${PORT}/api/users/signin`;
