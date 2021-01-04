@@ -85,7 +85,6 @@ const Profile = () => {
 
       if (data) {
         const { myPosts, success } = data;
-        console.log(data);
         if (success) {
           setPosts(myPosts);
         }

@@ -10,7 +10,6 @@ import { NEW_USER_PASSWORD_INITIAL_STATE } from "../../constants/initialState";
 import Error from "../shared/Error";
 
 const NewPassword = () => {
-  console.log(NEW_USER_PASSWORD_INITIAL_STATE);
   const history = useHistory();
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState(NEW_USER_PASSWORD_INITIAL_STATE);

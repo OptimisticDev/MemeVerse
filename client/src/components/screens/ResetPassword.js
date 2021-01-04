@@ -20,7 +20,6 @@ const ResetPassword = () => {
         email,
       });
       if (data) {
-        console.log(data);
         const { success, errors, message } = data;
         if (success) {
           M.toast({ html: message, classes: "success" });

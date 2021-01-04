@@ -61,7 +61,6 @@ const Home = () => {
       });
       if (res) {
         const { data } = res;
-        console.log(data);
         const updateData = posts;
         updateData[key].comments = data.comments;
 
