@@ -4,6 +4,7 @@ import {
   Route,
   Switch,
   useHistory,
+  Redirect,
 } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -26,7 +27,8 @@ const Routing = () => {
     const user = JSON.parse(localStorage.getItem(LOCAL_STORAGE_USER_KEY));
     if (user) {
       dispatch({ type: "USER", payload: user });
-      history.push("/hub");
+      // history.push("/");
+      <Redirect to="/hub" />;
     } else {
       if (!history.location.pathname.startsWith("/reset"))
         history.push("/signin");
