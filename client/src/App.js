@@ -26,7 +26,7 @@ const Routing = () => {
     const user = JSON.parse(localStorage.getItem(LOCAL_STORAGE_USER_KEY));
     if (user) {
       dispatch({ type: "USER", payload: user });
-      history.push("/");
+      history.push("/hub");
     } else {
       if (!history.location.pathname.startsWith("/reset"))
         history.push("/signin");
@@ -35,7 +35,7 @@ const Routing = () => {
 
   return (
     <Switch>
-      <Route exact path="/">
+      <Route exact path="/hub">
         <Home />
       </Route>
       <Route path="/signin">
