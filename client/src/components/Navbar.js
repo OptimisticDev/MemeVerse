@@ -13,7 +13,7 @@ const Navbar = () => {
       {state && (
         <nav>
           <div className="nav-wrapper">
-            <Link to="/home" className="brand-logo left">
+            <Link to="/" className="brand-logo left">
               MemeVerse
             </Link>
 

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, Redirect, useHistory } from "react-router-dom";
 import { UserContext } from "../../App";
 
 import axios from "axios";
@@ -54,7 +54,8 @@ const Signin = () => {
         M.toast({ html: message, classes: "success" });
 
         setSignInUser({ ...SIGNIN_USER_INITIAL_STATE });
-        history.push("/home");
+        history.push("/");
+        // <Redirect to="/" />;
       } else {
         setErrorMsg({ ...errors });
       }
