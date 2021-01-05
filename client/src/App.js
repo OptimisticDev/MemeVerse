@@ -40,19 +40,19 @@ const Routing = () => {
       <Route exact path="/hub">
         <Home />
       </Route>
-      <Route path="/signin">
+      <Route exact path="/signin">
         <Signin />
       </Route>
-      <Route path="/signup">
+      <Route exact path="/signup">
         <Signup />
       </Route>
-      <Route path="/profile">
+      <Route exact path="/profile">
         <Profile />
       </Route>
       <Route exact path="/reset">
         <ResetPassword />
       </Route>
-      <Route path="/reset/:token">
+      <Route exact path="/reset/:token">
         <NewPassword />
       </Route>
     </Switch>
