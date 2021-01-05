@@ -147,7 +147,7 @@ const resetPassword = (req, res) => {
           subject: "reset pasword",
           html: `
           <p>You are requested to reset password</p>
-          <h5>click this <a href="https://memeverseapp.herokuapp.com/reset/${token}">link</a> to reset password</h5?
+          <h5>click this <a href="http://localhost:3000/reset/${token}">link</a> to reset password</h5?
           `,
         });
 

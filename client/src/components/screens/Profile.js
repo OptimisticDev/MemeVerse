@@ -66,7 +66,7 @@ const Profile = () => {
         if (success) {
           M.toast({ html: message, classes: "success" });
           setPost({ ...POST_INITIAL_STATE });
-          history.push("/hub");
+          history.push("/");
         } else {
           M.toast({ html: errors.invalidUser, classes: "error" });
           setErrorMsg({ ...errors });
