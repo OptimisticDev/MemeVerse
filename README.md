@@ -46,3 +46,4 @@ ___
   * After attach the photo user should click the upload button to upload photo after that user can share the photo/post 
   * Signin user can show other user post in the hub (home page) and like unlike and comments the photo/post
   * Signin user can see his/her shared photo and total number of post
+  * Forget reset password with sending email
